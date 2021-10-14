@@ -1,0 +1,61 @@
+@import '../../../styles/variables.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: 1440px;
+
+      .li {
+        padding: 0.625rem;
+        font-size: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 999;
+        overflow: hidden;
+
+        &:after {
+          position: absolute;
+          z-index: -1;
+          top: -100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: $yellow;
+          transition: 0.4s;
+        }
+
+        &:hover {
+          &:after {
+            top: 50%;
+          }
+        }
+      }
+
+      .logo {
+        padding: 0.625rem 0.625rem 0.625rem;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
