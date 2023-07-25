@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  // background-color: $black;
+  color: $yellow;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .central {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+
+      h1 {
+        font-size: 64px;
+        font-family: 'Rubik', sans-serif;
+        display: block;
+        span {
+          color: $red;
+          display: block;
+          font-size: 74px;
+          font-weight: bold;
+          font-family: 'RocknRoll One', sans-serif;
+        }
+      }
+    }
+  }
+}

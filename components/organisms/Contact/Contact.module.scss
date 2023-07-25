@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  width: 100%;
+
+  a {
+    font-size: 1.875rem;
+  }
+
+  .socials {
+    padding: 2.5rem 0;
+
+    a {
+      padding: 0 1.875rem;
+    }
+  }
+
+  .copy {
+  }
+}

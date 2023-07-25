@@ -4,11 +4,8 @@ import Header from "../components/organisms/Header/Header";
 import SectionTitle from "../components/atomic/SectionTitle/SectionTitle";
 import styles from "../styles/layout.module.scss";
 import Hero from "../components/molecules/Hero/Hero";
-import TechStack from "../components/organisms/TechStack/TechStack";
-import Contact from "../components/organisms/Contact/Contact";
-import About from "../components/organisms/About/About";
 
-const Home: NextPage = () => {
+const Project: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,13 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Hero />
-      <About />
-      {/* <SectionTitle>Home</SectionTitle> */}
-      <TechStack />
-      <Contact />
+      <SectionTitle>Home</SectionTitle>
     </div>
   );
 };
 
-export default Home;
+export default Project;

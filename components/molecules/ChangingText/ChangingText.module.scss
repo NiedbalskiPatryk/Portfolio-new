@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@import "../../../styles/variables.scss";
 
 @keyframes blinking {
   0% {
@@ -17,13 +17,13 @@
 
 .changingTexts,
 .cursor {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: $blue;
+  color: $white;
 }
 
 .cursor {
