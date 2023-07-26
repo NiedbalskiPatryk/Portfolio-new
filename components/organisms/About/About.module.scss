@@ -6,11 +6,15 @@
   .central {
     display: flex;
     justify-content: center;
-    background-color: rgb(230, 211, 135);
+    // background-color: rgb(230, 211, 135);
     color: black;
     font-size: 20px;
     text-align: center;
     padding: 40px;
+    // overflow: hidden;
+    background: url("../../../public/copy.jpg") center center;
+    object-fit: fill;
+
     p {
       max-width: 1440px;
     }

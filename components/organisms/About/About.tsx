@@ -3,6 +3,7 @@ import styles from "./About.module.scss";
 
 import { motion } from "framer-motion";
 import SectionTitle from "../../atomic/SectionTitle/SectionTitle";
+import Image from "next/image";
 
 const About = () => {
   // const OtherComponent = loadable(
@@ -29,6 +30,7 @@ const About = () => {
 
   return (
     <section id="about" className={styles.about}>
+      {/* <Image src="/copy.jpg" layout="fill" /> */}
       <SectionTitle>Home</SectionTitle>
       {/* <OtherComponent /> */}
       {/* <Img
